@@ -1,6 +1,7 @@
 {
   "name": "b7a11-toy-marketplace-server-side",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
