@@ -28,7 +28,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    // await client.connect();
 
 
 
@@ -45,6 +45,7 @@ async function run() {
     //     const result = await toysCollection.find(query).toArray();
     //     res.send(result);
     // }) 
+  
 
     app.get('/toys', async (req, res) => {
       console.log(req.query.email);
@@ -60,8 +61,6 @@ async function run() {
       res.send(result);
     });
     
-    
-
     app.get('/toys', async (req, res) => {
       console.log(req.query);
       const initial = parseInt(req.query.page) || 0;
@@ -73,6 +72,8 @@ async function run() {
   })
 
     
+
+   
 
     //  app.get('/toys/:id', async (req, res) => {
     //      const id = req.params.id;
